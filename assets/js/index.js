@@ -31,6 +31,11 @@ document.addEventListener("DOMContentLoaded", () => {
     );
 
     if (response.status === 200) {
+      document.getElementById("firstname").value = "";
+      document.getElementById("lastname").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("subject").value = "";
+      document.getElementById("message").value = "";
       const modal = document.getElementById("modal");
       modal.className = "modalOff";
     }
