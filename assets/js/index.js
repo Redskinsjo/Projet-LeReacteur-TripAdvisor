@@ -30,6 +30,9 @@ document.addEventListener("DOMContentLoaded", () => {
       data
     );
 
-    console.log(response);
+    if (response.status === 200) {
+      const modal = document.getElementById("modal");
+      modal.className = "modalOff";
+    }
   });
 });
