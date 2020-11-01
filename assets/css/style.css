@@ -724,3 +724,14 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.ancre:first-child {
+  color: #38b278;
+  text-decoration: none;
+}
+.ancre:last-child {
+  color: #5d47d2;
+  text-decoration: none;
+}
+.ancre:hover {
+  text-decoration: underline;
+}
