@@ -119,6 +119,7 @@ nav {
   border: none;
   border-radius: 3%;
   outline: none;
+  box-sizing: border-box;
 }
 
 textarea {
@@ -127,6 +128,7 @@ textarea {
   border: none;
   border-radius: 3%;
   outline: none;
+  box-sizing: border-box;
 }
 
 #modal input:last-child {
@@ -136,6 +138,15 @@ textarea {
   color: white;
   cursor: pointer;
 }
+
+.required:before {
+  content: "*";
+  color: red;
+  font-size: 30px;
+  position: absolute;
+  right: 0;
+}
+
 /* Logo */
 
 nav > p {

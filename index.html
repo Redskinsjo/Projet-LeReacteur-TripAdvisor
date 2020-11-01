@@ -37,13 +37,18 @@
           <input id="lastname" type="text" name="lastname" placeholder="Nom" />
           <input id="email" type="text" name="email" placeholder="Email" />
           <input id="subject" type="text" name="subject" placeholder="Sujet" />
-          <textarea
-            name="message"
-            id="message"
-            placeholder="Votre message ici..."
-            cols="30"
-            rows="10"
-          ></textarea>
+          <div style="display: flex; position: relative; width: 100%">
+            <label for="message" class="required"></label>
+            <textarea
+              class="required"
+              name="message"
+              id="message"
+              placeholder="Votre message ici..."
+              cols="30"
+              rows="10"
+              required
+            ></textarea>
+          </div>
           <input id="submit" type="submit" value="Envoyer le message" />
         </div>
       </div>
