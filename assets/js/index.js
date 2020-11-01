@@ -12,4 +12,24 @@ document.addEventListener("DOMContentLoaded", () => {
     const modal = document.getElementById("modal");
     modal.className = "modalOff";
   });
+
+  document.getElementById("submit").addEventListener("click", async (e) => {
+    console.log(9);
+    e.preventDefault();
+
+    const data = {
+      firstname: document.getElementById("firstname").value,
+      lastname: document.getElementById("lastname").value,
+      email: document.getElementById("email").value,
+      subject: document.getElementById("subject").value,
+      message: document.getElementById("message").value,
+    };
+
+    const response = await axios.post(
+      "https://lereacteur-backend-formulaire.herokuapp.com/message",
+      data
+    );
+
+    console.log(response);
+  });
 });
