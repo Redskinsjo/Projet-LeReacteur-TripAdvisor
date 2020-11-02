@@ -39,5 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const modal = document.getElementById("modal");
       modal.className = "modalOff";
     }
+
+    console.log(response.data);
   });
 });
