@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   console.log(9);
-  document.getElementById("connect").addEventListener("click", () => {
+  document.getElementById("contactez-moi").addEventListener("click", () => {
     const modal = document.getElementById("modal");
     modal.className = "modalOn";
     const modal_popup = document.getElementById("modal-popup");
