@@ -1,3 +1,3 @@
 # Pour visiter le site
 
-**tripadvisor-lereacteur.netlify.app**
+**https://tripadvisor-lereacteur.netlify.app/**
